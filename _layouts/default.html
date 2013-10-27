@@ -1,93 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8"/>
-		<title>{% if page.title %} {{ page.title }} {% endif %} - Main website name</title>
-		<!-- For responsive site
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		-->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<link rel="author" href="humans.txt">
-		<meta name="description" content="Description Goes Here">
-		<link rel="stylesheet" href="/css/style.css">
-		<!--[if IE 7]>
-			<html class="ie7"> 
-			<link rel="stylesheet" type="text/css" href="/css/font-awesome-ie7.min.css">
-		<![endif]-->
-		<!--[if IE 8]><html class="ie8"> <![endif]-->		
-	    <!--[if lt IE 9]>
-	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	    <![endif]-->
+  <head>
+    <meta charset="utf-8"/>
+    <title>{% if page.title %} {{ page.title }} {% endif %} - Main website name</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-		<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-		<link rel="shortcut icon" href="ico/favicon.png">	    
-	</head>
-	<body>
-	  <div class="navbar-wrapper">
-	    <div class="container">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="author" href="humans.txt">
+    <meta name="description" content="Description Goes Here">
+    <link rel="stylesheet" href="/css/style.css">
+    <!--[if IE 7]>
+      <html class="ie7"> 
+      <link rel="stylesheet" type="text/css" href="/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <!--[if IE 8]><html class="ie8"> <![endif]-->   
+      <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
 
-	      <div class="navbar navbar-inverse navbar-static-top">
-	        <div class="container">
-	          <div class="navbar-header">
-	            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	              <span class="icon-bar"></span>
-	              <span class="icon-bar"></span>
-	              <span class="icon-bar"></span>
-	            </button>
-	            <a class="navbar-brand" href="#">Project name</a>
-	          </div>
-	          <div class="navbar-collapse collapse">
-	            <ul class="nav navbar-nav">
-	              <li class="active"><a href="#">Home</a></li>
-	              <li><a href="#about">About</a></li>
-	              <li><a href="#contact">Contact</a></li>
-	              <li class="dropdown">
-	                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-	                <ul class="dropdown-menu">
-	                  <li><a href="#">Action</a></li>
-	                  <li><a href="#">Another action</a></li>
-	                  <li><a href="#">Something else here</a></li>
-	                  <li class="divider"></li>
-	                  <li class="dropdown-header">Nav header</li>
-	                  <li><a href="#">Separated link</a></li>
-	                  <li><a href="#">One more separated link</a></li>
-	                </ul>
-	              </li>
-	            </ul>
-	          </div>
-	        </div>
-	      </div>
-
-	    </div>
-	  </div>
-	
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="ico/favicon.png">     
+  </head>
+  <body>
+<!--   
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Take Back the Town</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Nav header</li>
+              <li><a href="#">Separated link</a></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
 
 
 
-	{{ content }}
+  {{ content }}
 
-	<footer role="contentinfo">
-    <p class="pull-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-	</footer>
+  <div class="container">
+    <footer role="contentinfo">
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+  </div>
 
-	<!-- Footer
-	    ================================================== -->
+  <!-- Footer
+      ================================================== -->
 
-	<!-- Javascripts 
-	    ================================================= -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>if (!window.jQuery) {document.write('<script src="/js/jquery.min.js"><\/script>');}</script>
+  <!-- Modal -->
+  <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <!-- Javascripts 
+      ================================================= -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>if (!window.jQuery) {document.write('<script src="/js/jquery.min.js"><\/script>');}</script>
   <script src="/js/bootstrap.min.js"></script>
-	<script src="/js/custom.js"></script>
+  <script src="/js/custom.js"></script>
 
     <!-- Analytics
     ================================================== -->
     <script>
-		// analytics code
-    </script>	
-	</body>
+    // analytics code
+    </script> 
+  </body>
 </html>

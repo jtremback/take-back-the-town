@@ -2,6 +2,7 @@
 // Variables
 // --------------------------------------------------
 
+$blatant-shadow: 0px 5px 0 rgba(#000, .3);
 
 // Global values
 // --------------------------------------------------
@@ -24,11 +25,19 @@ $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 $brand-info:            #5bc0de !default;
 
+
+$red: $redYouTube;
+$darkRed: darken($red, 10%);
+$white: $whiteFloral;
+$darkWhite: desaturate(darken($whiteFloral, 8%), 40%);
+$blue: $blueDuller;
+$darkBlue: darken($blue, 10%);
+
 // Scaffolding
 // -------------------------
 
-$body-bg:               #fff !default;
-$text-color:            $gray-dark !default;
+$body-bg:               $whiteFloral !default;
+$text-color:            $grayGunmetal !default;
 
 // Links
 // -------------------------
@@ -39,13 +48,13 @@ $link-hover-color:      darken($link-color, 15%) !default;
 // Typography
 // -------------------------
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-sans-serif:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       "Merriweather", Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          14px !default;
-$font-size-large:         ceil($font-size-base * 1.25) !default; // ~18px
+$font-size-base:          16px !default;
+$font-size-large:         ceil($font-size-base * 1.6) !default; // ~18px
 $font-size-small:         ceil($font-size-base * 0.85) !default; // ~12px
 
 $line-height-base:        1.428571429 !default; // 20/14
@@ -78,9 +87,9 @@ $padding-small-horizontal:       10px !default;
 $line-height-large:              1.33 !default;
 $line-height-small:              1.5 !default;
 
-$border-radius-base:             4px !default;
-$border-radius-large:            6px !default;
-$border-radius-small:            3px !default;
+$border-radius-base:             0px !default;
+$border-radius-large:            0px !default;
+$border-radius-small:            0px !default;
 
 $component-active-bg:            $brand-primary !default;
 
@@ -560,10 +569,10 @@ $breadcrumb-active-color:     $gray-light !default;
 
 $carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6) !default;
 
-$carousel-control-color:                      #fff !default;
+$carousel-control-color:                      $text-color !default;
 $carousel-control-width:                      15% !default;
 $carousel-control-opacity:                    .5 !default;
-$carousel-control-font-size:                  20px !default;
+$carousel-control-font-size:                  30px !default;
 
 $carousel-indicator-active-bg:                #fff !default;
 $carousel-indicator-border-color:             #fff !default;
@@ -601,7 +610,7 @@ $page-header-border-color:    $gray-lighter !default;
 // -------------------------
 
 // Hr border color
-$hr-border:                   $gray-lighter !default;
+$hr-border:                   $darkWhite !default;
 
 // Horizontal forms & lists
 $component-offset-horizontal: 180px !default;
@@ -617,4 +626,4 @@ $container-tablet:            ((720px + $grid-gutter-width)) !default;
 $container-desktop:           ((940px + $grid-gutter-width)) !default;
 
 // Large screen / wide desktop
-$container-lg-desktop:        ((1140px + $grid-gutter-width)) !default;
+$container-lg-desktop:        ((940px + $grid-gutter-width)) !default;
