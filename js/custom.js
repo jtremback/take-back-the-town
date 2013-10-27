@@ -23,6 +23,7 @@ var debounce = function(func, wait, immediate) {
 };
 
 var parallax = function() {
+
   var scroll_top = $(window).scrollTop(),
       scroll_bottom = scroll_top + $(window).height();
 
@@ -67,6 +68,6 @@ $( window ).scroll(function() {
 });
 
 //INIT
-$(document).ready(function(){
-  parallax();
-});
+// $(document).ready(function(){
+//   parallax();
+// });

@@ -21,6 +21,11 @@ p {
 //   color: $text-color;
 // }
 
+hr.gutter {
+  margin-top: ($grid-gutter-width / 2);
+  margin-bottom: ($grid-gutter-width / 2);
+}
+
 .jumbotron {
   margin-bottom: 0;
   background-image: url("/img/dramatic_flag.png");
@@ -54,14 +59,27 @@ p {
   text-align: center;
   font-size: 180px;
   height: 100%;
+  text-shadow: $blatant-shadow;
 }
 
 .color-section {
   color: $whiteFloral;
   text-shadow: 1px 0px 0 rgba(#000, .5);
-  *[class^=icon-] {
-    text-shadow: $blatant-shadow;
+  a {
+    color: lighten($link-hover-color, 40%);
+    text-decoration: underline !important;
+
+    &:hover,
+    &:focus {
+      color: lighten($link-hover-color, 40%);
+      text-decoration: underline;
+    }
+
+    &:focus {
+      @include tab-focus();
+    }
   }
+
 }
 
 .btn-lg {

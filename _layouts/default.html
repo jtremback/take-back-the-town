@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>{% if page.title %} {{ page.title }} {% endif %} - Main website name</title>
+    <title>{% if page.title %} {{ page.title }} - {% endif %}Take Back the Town</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -20,11 +20,7 @@
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
 
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="ico/favicon.png">     
+    <link rel="shortcut icon" href="ico/favicon.ico">     
   </head>
   <body>
 <!--   
@@ -74,21 +70,169 @@
   <!-- Footer
       ================================================== -->
 
-  <!-- Modal -->
-  <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- Modal -->
+  <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">Modal title</h4>
+          <h4 class="modal-title">Take back your town</h4>
         </div>
         <div class="modal-body">
-          ...
+          <form role="form">
+            <p class="help-block">Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <div class="form-group">
+              <label for="signUpInputFirst">First Name</label>
+              <input type="email" class="form-control" id="signUpInputFirst" placeholder="Enter first name">
+            </div>
+
+            <div class="form-group">
+              <label for="signUpInputLast">Last Name</label>
+              <input type="text" class="form-control" id="signUpInputLast" placeholder="Enter last name">
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-8">
+                <label for="signUpInputCity">City</label>
+                <input type="text" class="form-control" id="signUpInputCity" placeholder="Enter city">
+              </div>
+
+              <div class="col-md-4">
+                <label for="signUpInputState">State</label>
+                <input type="text" class="form-control" id="signUpInputState" placeholder="Enter state">
+              </div>
+            </div>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Sign up for the monthly newsletter
+              </label>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+
+          </form>
         </div>
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Contact Us</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+
+            <div class="form-group">
+              <label for="contactInputFirst">First Name</label>
+              <input type="email" class="form-control" id="contactInputFirst" placeholder="Enter first name">
+            </div>
+
+            <div class="form-group">
+              <label for="contactInputLast">Last Name</label>
+              <input type="text" class="form-control" id="contactInputLast" placeholder="Enter last name">
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-8">
+                <label for="contactInputCity">City</label>
+                <input type="text" class="form-control" id="contactInputCity" placeholder="Enter city">
+              </div>
+
+              <div class="col-md-4">
+                <label for="contactInputState">State</label>
+                <input type="text" class="form-control" id="contactInputState" placeholder="Enter state">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactInputOrganization">Organization (optional)</label>
+              <input type="text" class="form-control" id="contactInputOrganization" placeholder="Enter organization">
+            </div>
+
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> I am a politician or running for office.
+              </label>
+            </div>
+
+            <textarea class="form-control" rows="3"></textarea>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+
+          </form>
+        </div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+
+<!-- Modal -->
+  <div class="modal fade" id="upload" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Upload photo or video</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="uploadInputFirst">First Name</label>
+              <input type="email" class="form-control" id="uploadInputFirst" placeholder="Enter first name">
+            </div>
+
+            <div class="form-group">
+              <label for="uploadInputLast">Last Name</label>
+              <input type="text" class="form-control" id="uploadInputLast" placeholder="Enter last name">
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-8">
+                <label for="uploadInputCity">City</label>
+                <input type="text" class="form-control" id="uploadInputCity" placeholder="Enter city">
+              </div>
+
+              <div class="col-md-4">
+                <label for="uploadInputState">State</label>
+                <input type="text" class="form-control" id="uploadInputState" placeholder="Enter state">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="uploadInputFile">Photo or video</label>
+              <input type="file" id="uploadInputFile">
+              <p class="help-block">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+
+          </form>
+        </div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
 
   <!-- Javascripts 
       ================================================= -->
