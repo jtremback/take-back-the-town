@@ -28,7 +28,7 @@ hr.gutter {
 
 .jumbotron {
   margin-bottom: 0;
-  background-image: url("../img/dramatic_flag.png");
+  background-image: url("./img/dramatic_flag.png");
   position: relative;
   @include vendor-prefix(background-size, cover);
   @include vendor-prefix(background-position, center);
